@@ -1,0 +1,46 @@
+.hero {
+  background-color: $action-color;
+  color: #fff;
+  height: 480px;
+}
+
+.hero-header {
+  @include outer-container;
+}
+
+.event-name {
+  font-size: modular-scale(5);
+  margin-bottom: 0;
+}
+
+.event-date {
+  font-size: modular-scale(3);
+}
+
+.container {
+  @include outer-container;
+}
+
+.section {
+  padding: $base-spacing * 2 0;
+
+  .section-header {
+    color: $action-color;
+    font-size: modular-scale(2);
+  }
+}
+
+.lead {
+  font-size: modular-scale(1);
+}
+
+.event-description h4 {
+  color: $action-color;
+  font-size: modular-scale(1);
+}
+
+.footer {
+  background-color: $dark-gray;
+  color: $light-gray;
+  text-align: center;
+}
