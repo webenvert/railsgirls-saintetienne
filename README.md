@@ -1,0 +1,1 @@
+# Rails Girls Saint-Etienne
