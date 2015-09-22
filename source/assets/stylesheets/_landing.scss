@@ -110,4 +110,9 @@
     font-size: modular-scale(-1);
     margin-bottom: 0;
   }
+
+  a {
+    color: $medium-gray;
+    text-decoration: underline;
+  }
 }
