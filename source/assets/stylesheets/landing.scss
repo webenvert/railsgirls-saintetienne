@@ -5,7 +5,8 @@
   padding-top: $base-spacing;
 }
 
-.hero-header {
+.hero-header,
+.scene {
   @include outer-container;
 }
 
