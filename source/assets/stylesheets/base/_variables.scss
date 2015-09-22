@@ -1,9 +1,11 @@
 // Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
+$base-font-family: join("proxima-nova", $helvetica);
+$heading-font-family: join("expressway", $helvetica);
+
+$modular-scale-ratio: $major-third;
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 1.25em;
 
 // Line height
 $base-line-height: 1.5;

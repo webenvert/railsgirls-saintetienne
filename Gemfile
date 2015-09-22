@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'middleman'
-gem 'middleman-livereload'
-gem 'middleman-deploy'
 gem 'bourbon'
+gem 'middleman'
+gem 'middleman-deploy'
+gem 'middleman-livereload'
 gem 'neat'

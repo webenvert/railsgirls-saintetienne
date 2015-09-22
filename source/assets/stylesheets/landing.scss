@@ -2,6 +2,7 @@
   background-color: $action-color;
   color: #fff;
   height: 480px;
+  padding-top: $base-spacing;
 }
 
 .hero-header {
@@ -9,7 +10,8 @@
 }
 
 .event-name {
-  font-size: modular-scale(5);
+  font-size: modular-scale(6);
+  font-weight: 700;
   margin-bottom: 0;
 }
 
@@ -26,21 +28,50 @@
 
   .section-header {
     color: $action-color;
-    font-size: modular-scale(2);
+    font-size: modular-scale(3);
   }
 }
 
-.lead {
-  font-size: modular-scale(1);
+.intro {
+  font-size: modular-scale(2);
+  margin-bottom: $base-spacing * 2;
 }
 
-.event-description h4 {
-  color: $action-color;
-  font-size: modular-scale(1);
+.event-description {
+
+  h4 {
+    color: $action-color;
+    font-size: modular-scale(1);
+  }
+}
+
+.benefits {
+  @include span-columns(4);
+}
+
+.requirements {
+  @include span-columns(4);
+}
+
+.sponsors-grid {
+  @include clearfix;
+
+  margin-bottom: $base-spacing;
+
+  li {
+    @include span-columns(4);
+    @include omega(3n);
+  }
 }
 
 .footer {
-  background-color: $dark-gray;
-  color: $light-gray;
+  background-color: mix($dark-gray, $action-color, 95%);
+  color: $medium-gray;
+  padding: $base-spacing;
   text-align: center;
+
+  p {
+    font-size: modular-scale(-1);
+    margin-bottom: 0;
+  }
 }

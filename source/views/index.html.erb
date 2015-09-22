@@ -12,26 +12,30 @@ title: Rails Girls Saint-Etienne
 
 <div class="container">
   <div class="section event-description">
-    <p class="lead">
+    <p class="intro">
       RailsGirls est un atelier gratuit d'une soirée et une journée,
       durant lesquelles les participantes crééent une application Web
       complète à l'aide de Ruby on Rails, et de nos fantastiques mentors :)
     </p>
 
-    <h4>Vous apprendrez</h4>
-    <p>à développer une application web complète avec le technologie Ruby on Rails avec l'aide de nos mentors.</p>
+    <div id="benefits" class="benefits">
+      <h4>Vous apprendrez</h4>
+      <p>à développer une application web complète avec la technologie Ruby on Rails avec l'aide de nos mentors.</p>
+    </div>
 
-    <h4>Vous avez besoin</h4>
-    <p>d'un ordinateur portable, de la curiosité et d'un brin de créativité.</p>
+    <div class="requirements">
+      <h4>Vous avez besoin</h4>
+      <p>d'aucune expérience Web ou de programmation, uniquement d'un ordinateur portable, de la curiosité et d'un brin de créativité.</p>
+    </div>
+
+    <div class="help-us">
+      <h4>Vous voulez aider ?</h4>
+      <p>Nous cherchons des volontaires, mentors et sponsors.<br><a href="mailto:mehdi@craftsmen.io">Un petit mail ?</a>
+    </div>
   </div>
 
-  <div class="section location">
-    <h3 class="section-header">Lieu</h3>
-    <p>Chez Craftsmen, au Bâtiment des Hautes Technologies, 20 rue Benoît Lauras, Saint-Etienne.</p>
-  </div>
-
-  <div class="section schedule">
-    <h3 class="section-header">Programme</h3>
+  <div id="schedule" class="section schedule">
+    <h3 class="section-header"> Au programme</h3>
     <h3>Vendredi 23 octobre</h3>
     <h4>Install Party</h4>
     <p>
@@ -48,11 +52,21 @@ title: Rails Girls Saint-Etienne
     <p>Pour avoir une meilleure idée de ce qui vous attend, vous pouvez regarder ces vidéos ou photos des RailsGirls de Berlin, Cracovie et Singapour.</p>
   </div>
 
+
+  <div class="section location">
+    <h3 class="section-header">Lieu</h3>
+    <p>Chez Craftsmen, au Bâtiment des Hautes Technologies, 20 rue Benoît Lauras, Saint-Etienne.</p>
+    <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/mehlah.nfmb7h36/attribution,zoompan.html?access_token=pk.eyJ1IjoibWVobGFoIiwiYSI6IlFYOVpsVkkifQ.0R__h2wpwHGkLtuC-JtqIw'></iframe>
+  </div>
+
   <div class="section sponsors">
     <h3 class="section-header">Sponsors</h3>
-    <ul>
-      <li></li>
+    <ul class="sponsors-grid">
+      <li><%= image_tag 'http://placehold.it/300x150' %></li>
+      <li><%= image_tag 'http://placehold.it/300x150' %></li>
+      <li><%= image_tag 'http://placehold.it/300x150' %></li>
     </ul>
+    <p>Vous souhaitez nous aider ? <a href="mailto:mehdi@craftsmen.io">Contactez-nous !</a></p>
   </div>
 
   <div class="section faq">
@@ -80,10 +94,12 @@ title: Rails Girls Saint-Etienne
       <strong>Je peux vous aider ?</strong>
       Plus on est de mentors plus on rit :)
       Manifestez-vous auprès de <a href="http://twitter.com/WebEnVert">@WebEnVert</a> sur Twitter !
+      Vous pouvez également nous aider en sponsorisant l'événement.
     </p>
   </div>
 </div>
 
 <div class="footer">
+  <p>Shaped by the fine ladies and gentlemen from Web en Vert & Craftsmen.</p>
   <p>Get excited and make things!</p>
 </div>
