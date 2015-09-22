@@ -75,6 +75,31 @@
   }
 }
 
+.newsletter {
+
+  label {
+    font-weight: 500;
+  }
+
+  input {
+    font-size: modular-scale(0);
+    display: inline-block;
+
+    &[type="email"] {
+      line-height: 1;
+      margin-bottom: 0;
+      margin-right: 1em;
+      padding: $small-spacing 0.5em;
+      width: flex-grid(8);
+    }
+
+    &[type="submit"] {
+      border: 1px solid $action-color;
+      vertical-align: baseline;
+    }
+  }
+}
+
 .footer {
   background-color: mix($dark-gray, $action-color, 95%);
   color: $medium-gray;
