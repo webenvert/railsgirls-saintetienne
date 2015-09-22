@@ -657,7 +657,7 @@ html {
   /* line 27, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
   .cta-tickets:hover {
     background-color: #fff;
-    color: #d3360b; }
+    color: #333; }
 
 /* line 33, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .container {
