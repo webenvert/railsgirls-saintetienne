@@ -1,0 +1,29 @@
+.press-release {
+  @include span-columns(7);
+
+  .learn-to-code {
+    margin-top: $base-spacing;
+  }
+}
+
+.pr-event-details {
+  @include span-columns(4);
+  @include shift(1);
+
+  .section-header {
+    color: $action-color;
+    margin-top: $base-spacing;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h5 {
+    margin-top: $base-spacing;
+  }
+
+  p {
+    font-size: modular-scale(-1);
+  }
+}

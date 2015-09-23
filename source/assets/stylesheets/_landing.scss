@@ -31,10 +31,6 @@
   }
 }
 
-.container {
-  @include outer-container;
-}
-
 .section {
   padding: $base-spacing * 2 0;
 
