@@ -1,1 +1,1 @@
-# Rails Girls Saint-Etienne
+# Rails Girls Saint-Étienne
