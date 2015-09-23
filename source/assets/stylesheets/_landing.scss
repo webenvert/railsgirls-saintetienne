@@ -65,6 +65,10 @@
   @include span-columns(4);
 }
 
+.location-map {
+  margin-top: $base-spacing;
+}
+
 .sponsors-grid {
   @include clearfix;
 
