@@ -624,42 +624,41 @@ html {
 .hero {
   background-color: #d3360b;
   color: #fff;
-  height: 480px;
   padding-top: 1.5em; }
 
-/* line 8, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
-.hero-header,
-.scene {
+/* line 7, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+.hero-header {
   max-width: 1080px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: url("../images/hero-header.png") left 0 bottom 1.5em no-repeat;
+  height: 460px; }
   /* line 20, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bourbon-4.2.5/app/assets/stylesheets/addons/_clearfix.scss */
-  .hero-header::after,
-  .scene::after {
+  .hero-header::after {
     clear: both;
     content: "";
     display: table; }
 
-/* line 13, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 14, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .event-name {
   font-size: 3.8147em;
   font-weight: 700;
   margin-bottom: 0; }
 
-/* line 19, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 20, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .event-date {
   font-size: 1.95313em; }
 
-/* line 23, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 24, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .cta-tickets {
   background-color: #9e2908;
   font-size: 1em; }
-  /* line 27, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+  /* line 28, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
   .cta-tickets:hover {
     background-color: #fff;
     color: #333; }
 
-/* line 33, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 34, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .container {
   max-width: 1080px;
   margin-left: auto;
@@ -670,25 +669,25 @@ html {
     content: "";
     display: table; }
 
-/* line 37, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 38, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .section {
   padding: 3em 0; }
-  /* line 40, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+  /* line 41, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
   .section .section-header {
     color: #d3360b;
     font-size: 1.95313em; }
 
-/* line 46, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 47, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .intro {
   font-size: 1.5625em;
   margin-bottom: 3em; }
 
-/* line 53, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 54, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .event-description h4 {
   color: #d3360b;
   font-size: 1.25em; }
 
-/* line 59, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 60, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .benefits {
   float: left;
   display: block;
@@ -698,7 +697,7 @@ html {
   .benefits:last-child {
     margin-right: 0; }
 
-/* line 63, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 64, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .requirements {
   float: left;
   display: block;
@@ -708,7 +707,7 @@ html {
   .requirements:last-child {
     margin-right: 0; }
 
-/* line 67, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 68, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .sponsors-grid {
   margin-bottom: 1.5em; }
   /* line 20, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bourbon-4.2.5/app/assets/stylesheets/addons/_clearfix.scss */
@@ -716,7 +715,7 @@ html {
     clear: both;
     content: "";
     display: table; }
-  /* line 72, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+  /* line 73, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
   .sponsors-grid li {
     float: left;
     display: block;
@@ -732,36 +731,59 @@ html {
     .sponsors-grid li:nth-child(3n+1) {
       clear: left; }
 
-/* line 80, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
-.newsletter label {
-  font-weight: 500; }
-/* line 84, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
-.newsletter input {
-  font-size: 1em;
-  display: inline-block; }
-  /* line 88, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
-  .newsletter input[type="email"] {
-    line-height: 1;
-    margin-bottom: 0;
-    margin-right: 1em;
-    padding: 0.75em 0.5em;
-    width: 65.88078%; }
-  /* line 96, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
-  .newsletter input[type="submit"] {
-    border: 1px solid #d3360b;
-    vertical-align: baseline; }
-
-/* line 103, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 79, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .footer {
-  background-color: #3b3331;
+  background-color: #363332;
   color: #999;
-  padding: 1.5em;
-  text-align: center; }
-  /* line 109, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+  padding: 1.5em 0 4.5em; }
+  /* line 84, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
   .footer p {
     font-size: 0.8em;
     margin-bottom: 0; }
-  /* line 114, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+  /* line 89, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
   .footer a {
     color: #999;
     text-decoration: underline; }
+
+/* line 95, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+.credits {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%; }
+  /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  .credits:last-child {
+    margin-right: 0; }
+
+/* line 99, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+.newsletter {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  .newsletter:last-child {
+    margin-right: 0; }
+  /* line 102, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+  .newsletter label {
+    font-size: 0.8em;
+    font-weight: 500; }
+  /* line 107, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+  .newsletter input {
+    font-size: 0.8em;
+    display: inline-block; }
+    /* line 111, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+    .newsletter input[type="email"] {
+      background-color: transparent;
+      border-color: #999;
+      line-height: 1;
+      margin-bottom: 0;
+      margin-right: 1em;
+      padding: 0.75em 0.5em;
+      width: 60%; }
+    /* line 121, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+    .newsletter input[type="submit"] {
+      background-color: #999;
+      border: 1px solid #999;
+      color: #333;
+      vertical-align: baseline; }
