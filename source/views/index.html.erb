@@ -116,9 +116,11 @@ title: Rails Girls Saint-Étienne
 
 <div class="footer">
   <div class="container">
-    <div class="credits">
-      <p>Shaped by the fine ladies and gentlemen from <%= link_to 'Web en Vert', 'http://webenvert.fr' %> & <%= link_to 'Craftsmen', 'http://craftsmen.io' %>.</p>
-      <p><%= link_to 'Get excited and make things!', 'http://railsgirls.com' %></p>
+    <div class="links">
+      <nav>
+        <%= link_to 'Communiqué de presse', '/press' %>
+        <%= link_to 'Contact', 'mailto:mehdi@craftsmen.io' %>
+      </nav>
     </div>
 
     <div class="newsletter">
@@ -130,5 +132,10 @@ title: Rails Girls Saint-Étienne
         <div style="position: absolute; left: -5000px;"><input type="text" name="b_aee53628420c3051e5f7dcc23_911d928859" tabindex="-1" value=""></div>
       </form>
     </div>
+  </div>
+
+  <div class="credits">
+    <p>Shaped by the fine ladies and gentlemen from <%= link_to 'Web en Vert', 'http://webenvert.fr' %> & <%= link_to 'Craftsmen', 'http://craftsmen.io' %>.</p>
+    <p><%= link_to 'Get excited and make things!', 'http://railsgirls.com' %></p>
   </div>
 </div>

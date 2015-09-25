@@ -79,7 +79,7 @@
 .footer {
   background-color: mix($dark-gray, $action-color, 98%);
   color: $medium-gray;
-  padding: $base-spacing 0 $base-spacing * 3;
+  padding: $base-spacing 0;
 
   p {
     font-size: modular-scale(-1);
@@ -92,12 +92,21 @@
   }
 }
 
-.credits {
-  @include span-columns(7);
+.links {
+  @include span-columns(6);
+
+  nav {
+    margin-bottom: $small-spacing;
+  }
+
+  a {
+    font-size: modular-scale(-1);
+    margin-right: 1em;
+  }
 }
 
 .newsletter {
-  @include span-columns(5);
+  @include span-columns(6);
 
   label {
     font-size: modular-scale(-1);
@@ -105,8 +114,8 @@
   }
 
   input {
-    font-size: modular-scale(-1);
     display: inline-block;
+    font-size: modular-scale(-1);
 
     &[type="email"] {
       background-color: transparent;
@@ -115,7 +124,7 @@
       margin-bottom: 0;
       margin-right: 1em;
       padding: $small-spacing 0.5em;
-      width: 60%;
+      width: 65%;
     }
 
     &[type="submit"] {
@@ -125,4 +134,9 @@
       vertical-align: baseline;
     }
   }
+}
+
+.credits {
+  margin-top: $base-spacing * 2;
+  text-align: center;
 }
