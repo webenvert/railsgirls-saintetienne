@@ -4,5 +4,6 @@ $column: modular-scale(3, 1em, $golden);
 $gutter: modular-scale(1, 1em, $golden);
 $grid-columns: 12;
 $max-width: 1080px;
+$small-screen: new-breakpoint(max-width 720px);
 
 //$visual-grid: true;

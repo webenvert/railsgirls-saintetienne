@@ -5,6 +5,10 @@
 
 .container {
   @include outer-container;
+
+  @include media($small-screen) {
+    padding: 0 10px;
+  }
 }
 
 .go-to-root {

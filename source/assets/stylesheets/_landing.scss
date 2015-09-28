@@ -2,6 +2,10 @@
   background-color: $action-color;
   color: #fff;
   padding-top: $base-spacing;
+
+  @include media($small-screen) {
+    padding: 0 10px;
+  }
 }
 
 .hero-header {
@@ -9,16 +13,43 @@
 
   background: image-url("hero-header.png") left 0 bottom 1.5em no-repeat;
   height: 460px;
+
+  .show-on-small {
+    display: none;
+  }
+
+  @include media($small-screen) {
+    background: none;
+
+    .show-on-large {
+      display: none;
+    }
+
+    .show-on-small {
+      display: block;
+    }
+  }
 }
 
 .event-name {
   font-size: modular-scale(6);
   font-weight: 700;
   margin-bottom: 0;
+
+  @include media($small-screen) {
+    font-size: modular-scale(5);
+    padding: 40px 0 20px;
+    text-align: center;
+  }
 }
 
 .event-date {
   font-size: modular-scale(3);
+
+  @include media($small-screen) {
+    font-size: modular-scale(2);
+    text-align: center;
+  }
 }
 
 .cta-tickets {
@@ -29,10 +60,30 @@
     background-color: #fff;
     color: $base-font-color;
   }
+
+  @include media($small-screen) {
+    margin: $small-spacing/2 calc(50% - 100px);
+  }
 }
 
 .section {
   padding: $base-spacing * 2 0;
+
+  .cta-tickets {
+    display: none;
+  }
+
+  @include media($small-screen) {
+    padding: $small-spacing * 2 0;
+
+    iframe {
+      display: none;
+    }
+
+    .cta-tickets {
+      display: block;
+    }
+  }
 
   .section-header {
     color: $action-color;
@@ -43,6 +94,10 @@
 .intro {
   font-size: modular-scale(2);
   margin-bottom: $base-spacing * 2;
+
+  @include media($small-screen) {
+    font-size: modular-scale(1);
+  }
 }
 
 .event-description {
@@ -55,10 +110,20 @@
 
 .benefits {
   @include span-columns(4);
+
+  @include media($small-screen) {
+    @include span-columns(12);
+    margin-bottom: $base-spacing * 1.5;
+  }
 }
 
 .requirements {
   @include span-columns(4);
+
+  @include media($small-screen) {
+    @include span-columns(12);
+    margin-bottom: $base-spacing * 1.5;
+  }
 }
 
 .location-map {
@@ -73,6 +138,11 @@
   li {
     @include span-columns(4);
     @include omega(3n);
+
+    @include media($small-screen) {
+      @include span-columns(12);
+      margin: $small-spacing/2 calc(50% - 150px);
+    }
   }
 }
 
@@ -95,6 +165,10 @@
 .links {
   @include span-columns(6);
 
+  @include media($small-screen) {
+    @include span-columns(12);
+  }
+
   nav {
     margin-bottom: $small-spacing;
   }
@@ -102,11 +176,23 @@
   a {
     font-size: modular-scale(-1);
     margin-right: 1em;
+
+    @include media($small-screen) {
+      display: block;
+      font-size: modular-scale(0);
+      margin-right: inherit;
+      text-align: center;
+    }
   }
 }
 
 .newsletter {
   @include span-columns(6);
+
+  @include media($small-screen) {
+    @include span-columns(12);
+    text-align: center;
+}
 
   label {
     font-size: modular-scale(-1);
@@ -125,7 +211,12 @@
       margin-right: 1em;
       padding: $small-spacing 0.5em;
       width: 65%;
+
+      @include media($small-screen) {
+        @include span-columns(12);
+        margin-bottom: $small-spacing;
     }
+  }
 
     &[type="submit"] {
       background-color: $medium-gray;
@@ -139,4 +230,8 @@
 .credits {
   margin-top: $base-spacing * 2;
   text-align: center;
+
+  @include media($small-screen) {
+    margin: $base-spacing;
+  }
 }
