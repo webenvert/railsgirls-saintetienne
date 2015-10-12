@@ -108,7 +108,8 @@
 
     @include media($small-screen) {
       @include span-columns(12);
-      margin: $small-spacing/2 calc(50% - 150px);
+
+      text-align: center;
     }
   }
 }
