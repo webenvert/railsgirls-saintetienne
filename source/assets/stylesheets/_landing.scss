@@ -14,20 +14,8 @@
   background: image-url("hero-header.png") left 0 bottom 1.5em no-repeat;
   height: 460px;
 
-  .show-on-small {
-    display: none;
-  }
-
   @include media($small-screen) {
     background: none;
-
-    .show-on-large {
-      display: none;
-    }
-
-    .show-on-small {
-      display: block;
-    }
   }
 }
 

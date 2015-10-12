@@ -15,3 +15,17 @@
   font-size: modular-scale(-1);
   margin-bottom: $base-spacing;
 }
+
+.show-on-small {
+  display: none;
+}
+
+@include media($small-screen) {
+  .show-on-large {
+    display: none;
+  }
+
+  .show-on-small {
+    display: block;
+  }
+}
