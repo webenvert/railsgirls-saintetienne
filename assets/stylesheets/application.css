@@ -634,8 +634,13 @@ html {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 720px) {
+    /* line 6, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_layout.scss */
+    .container {
+      padding-left: 1em;
+      padding-right: 1em; } }
 
-/* line 10, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_layout.scss */
+/* line 15, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_layout.scss */
 .go-to-root {
   font-size: 0.8em;
   margin-bottom: 1.5em; }
@@ -652,51 +657,74 @@ html {
   margin-left: auto;
   margin-right: auto;
   background: url("../images/hero-header.png") left 0 bottom 1.5em no-repeat;
-  height: 460px; }
+  min-height: 460px; }
   /* line 20, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bourbon-4.2.5/app/assets/stylesheets/addons/_clearfix.scss */
   .hero-header::after {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 720px) {
+    /* line 7, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+    .hero-header {
+      background: none;
+      min-height: 360px;
+      text-align: center; } }
 
-/* line 14, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 20, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .event-name {
   font-size: 3.8147em;
   font-weight: 700;
   margin-bottom: 0; }
+  @media screen and (max-width: 720px) {
+    /* line 20, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+    .event-name {
+      font-size: 3.05176em;
+      margin-bottom: 0.25em; }
+      /* line 29, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+      .event-name span {
+        display: block; } }
 
-/* line 20, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 35, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .event-date {
   font-size: 1.95313em; }
+  @media screen and (max-width: 720px) {
+    /* line 35, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+    .event-date {
+      font-size: 1.5625em;
+      margin-bottom: 1.5em; } }
 
-/* line 24, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 44, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .cta-tickets {
   background-color: #9e2908;
   font-size: 1em; }
-  /* line 28, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+  /* line 48, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
   .cta-tickets:hover {
     background-color: #fff;
     color: #333; }
 
-/* line 34, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 54, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .section {
   padding: 3em 0; }
-  /* line 37, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+  /* line 57, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
   .section .section-header {
     color: #d3360b;
     font-size: 1.95313em; }
 
-/* line 43, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 63, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .intro {
   font-size: 1.5625em;
   margin-bottom: 3em; }
+  @media screen and (max-width: 720px) {
+    /* line 63, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+    .intro {
+      font-size: 1.25em; } }
 
-/* line 50, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 74, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .event-description h4 {
   color: #d3360b;
   font-size: 1.25em; }
 
-/* line 56, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 80, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .benefits {
   float: left;
   display: block;
@@ -705,8 +733,19 @@ html {
   /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
   .benefits:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 720px) {
+    /* line 80, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+    .benefits {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-bottom: 2.25em; }
+      /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .benefits:last-child {
+        margin-right: 0; } }
 
-/* line 60, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 89, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .requirements {
   float: left;
   display: block;
@@ -715,12 +754,23 @@ html {
   /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
   .requirements:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 720px) {
+    /* line 89, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+    .requirements {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-bottom: 2.25em; }
+      /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .requirements:last-child {
+        margin-right: 0; } }
 
-/* line 64, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 98, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .location-map {
   margin-top: 1.5em; }
 
-/* line 68, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 102, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .sponsors-grid {
   margin-bottom: 1.5em; }
   /* line 20, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bourbon-4.2.5/app/assets/stylesheets/addons/_clearfix.scss */
@@ -728,37 +778,48 @@ html {
     clear: both;
     content: "";
     display: table; }
-  /* line 73, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+  /* line 107, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
   .sponsors-grid li {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%; }
+    width: 23.23176%; }
     /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
     .sponsors-grid li:last-child {
       margin-right: 0; }
     /* line 78, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_omega.scss */
-    .sponsors-grid li:nth-child(3n) {
+    .sponsors-grid li:nth-child(4n) {
       margin-right: 0; }
     /* line 83, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_omega.scss */
-    .sponsors-grid li:nth-child(3n+1) {
+    .sponsors-grid li:nth-child(4n+1) {
       clear: left; }
+    @media screen and (max-width: 720px) {
+      /* line 107, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+      .sponsors-grid li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        text-align: center; }
+        /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+        .sponsors-grid li:last-child {
+          margin-right: 0; } }
 
-/* line 79, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 119, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .footer {
   background-color: #363332;
   color: #999;
   padding: 1.5em 0; }
-  /* line 84, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+  /* line 124, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
   .footer p {
     font-size: 0.8em;
     margin-bottom: 0; }
-  /* line 89, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+  /* line 129, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
   .footer a {
     color: #999;
     text-decoration: underline; }
 
-/* line 95, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 135, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .links {
   float: left;
   display: block;
@@ -767,15 +828,32 @@ html {
   /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
   .links:last-child {
     margin-right: 0; }
-  /* line 98, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+  @media screen and (max-width: 720px) {
+    /* line 135, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+    .links {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .links:last-child {
+        margin-right: 0; } }
+  /* line 142, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
   .links nav {
     margin-bottom: 0.75em; }
-  /* line 102, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+  /* line 146, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
   .links a {
     font-size: 0.8em;
     margin-right: 1em; }
+    @media screen and (max-width: 720px) {
+      /* line 146, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+      .links a {
+        display: block;
+        font-size: 1em;
+        margin-right: inherit;
+        text-align: center; } }
 
-/* line 108, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 159, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .newsletter {
   float: left;
   display: block;
@@ -784,15 +862,26 @@ html {
   /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
   .newsletter:last-child {
     margin-right: 0; }
-  /* line 111, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+  @media screen and (max-width: 720px) {
+    /* line 159, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+    .newsletter {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      text-align: center; }
+      /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .newsletter:last-child {
+        margin-right: 0; } }
+  /* line 167, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
   .newsletter label {
     font-size: 0.8em;
     font-weight: 500; }
-  /* line 116, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+  /* line 172, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
   .newsletter input {
     display: inline-block;
     font-size: 0.8em; }
-    /* line 120, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+    /* line 176, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
     .newsletter input[type="email"] {
       background-color: transparent;
       border-color: #999;
@@ -801,17 +890,32 @@ html {
       margin-right: 1em;
       padding: 0.75em 0.5em;
       width: 65%; }
-    /* line 130, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+      @media screen and (max-width: 720px) {
+        /* line 176, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+        .newsletter input[type="email"] {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          margin-bottom: 0.75em; }
+          /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+          .newsletter input[type="email"]:last-child {
+            margin-right: 0; } }
+    /* line 191, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
     .newsletter input[type="submit"] {
       background-color: #999;
       border: 1px solid #999;
       color: #333;
       vertical-align: baseline; }
 
-/* line 139, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+/* line 200, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
 .credits {
   margin-top: 3em;
   text-align: center; }
+  @media screen and (max-width: 720px) {
+    /* line 200, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_landing.scss */
+    .credits {
+      margin: 1.5em; } }
 
 /* line 2, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_coc.scss */
 .coc aside {
@@ -826,11 +930,21 @@ html {
   /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
   .press-release:last-child {
     margin-right: 0; }
-  /* line 4, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_press.scss */
+  @media screen and (max-width: 720px) {
+    /* line 1, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_press.scss */
+    .press-release {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .press-release:last-child {
+        margin-right: 0; } }
+  /* line 8, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_press.scss */
   .press-release .learn-to-code {
     margin-top: 1.5em; }
 
-/* line 9, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_press.scss */
+/* line 13, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_press.scss */
 .pr-event-details {
   float: left;
   display: block;
@@ -840,16 +954,27 @@ html {
   /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
   .pr-event-details:last-child {
     margin-right: 0; }
-  /* line 13, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_press.scss */
+  @media screen and (max-width: 720px) {
+    /* line 13, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_press.scss */
+    .pr-event-details {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-left: 0%; }
+      /* line 89, /Users/mehlah/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .pr-event-details:last-child {
+        margin-right: 0; } }
+  /* line 22, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_press.scss */
   .pr-event-details .section-header {
     color: #d3360b;
     margin-top: 1.5em; }
-    /* line 17, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_press.scss */
+    /* line 26, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_press.scss */
     .pr-event-details .section-header:first-child {
       margin-top: 0; }
-  /* line 22, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_press.scss */
+  /* line 31, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_press.scss */
   .pr-event-details h5 {
     margin-top: 1.5em; }
-  /* line 26, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_press.scss */
+  /* line 35, /Users/mehlah/Playground/railsgirls-saintetienne/source/assets/stylesheets/_press.scss */
   .pr-event-details p {
     font-size: 0.8em; }
