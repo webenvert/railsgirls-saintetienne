@@ -2,22 +2,18 @@
   background-color: $action-color;
   color: #fff;
   padding-top: $base-spacing;
-
-  @include media($small-screen) {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
 }
 
 .hero-header {
   @include outer-container;
 
   background: image-url("hero-header.png") left 0 bottom 1.5em no-repeat;
-  height: 460px;
-  text-align: center;
+  min-height: 460px;
 
   @include media($small-screen) {
     background: none;
+    min-height: 360px;
+    text-align: center;
   }
 }
 
@@ -28,6 +24,11 @@
 
   @include media($small-screen) {
     font-size: modular-scale(5);
+    margin-bottom: $small-spacing / 3;
+
+    span {
+      display: block;
+    }
   }
 }
 
@@ -36,6 +37,7 @@
 
   @include media($small-screen) {
     font-size: modular-scale(2);
+    margin-bottom: $base-spacing;
   }
 }
 
