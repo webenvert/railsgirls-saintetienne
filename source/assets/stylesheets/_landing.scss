@@ -4,7 +4,8 @@
   padding-top: $base-spacing;
 
   @include media($small-screen) {
-    padding: 0 10px;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 
@@ -26,7 +27,6 @@
 
   @include media($small-screen) {
     font-size: modular-scale(5);
-    padding: 40px 0 20px;
     text-align: center;
   }
 }
