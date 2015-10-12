@@ -1,6 +1,10 @@
 .press-release {
   @include span-columns(7);
 
+  @include media($small-screen) {
+    @include span-columns(12);
+  }
+
   .learn-to-code {
     margin-top: $base-spacing;
   }
@@ -9,6 +13,11 @@
 .pr-event-details {
   @include span-columns(4);
   @include shift(1);
+
+  @include media($small-screen) {
+    @include span-columns(12);
+    @include shift(0);
+  }
 
   .section-header {
     color: $action-color;
