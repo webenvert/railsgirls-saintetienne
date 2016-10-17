@@ -1,8 +1,3 @@
-require 'extensions/views'
-
-activate :views
-activate :directory_indexes
-
 set :relative_links, true
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
@@ -18,6 +13,8 @@ configure :build do
   # Relative assets needed to deploy to Github Pages
   activate :relative_assets
 end
+
+activate :directory_indexes
 
 activate :deploy do |deploy|
   deploy.build_before = true
